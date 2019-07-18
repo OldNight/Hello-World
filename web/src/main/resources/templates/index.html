@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html:charset=UTF-8">
+<meta name="viewport" content="width=device=width,initial-scale=1,shrink-to-fit=no">
+<meta name="Description" content="">
+<meta name="author" content="">
+<title>index</title>
+</head>
+
+<body class="text-center">
+		<form class="form-signin" action="/user/index" method="post"><!-- action=" "   双引号中的路径与@PostMapping(value = " ")value中的路径必须一致-->
+			<h1 class="h3 mb-3 font-weight-normal">请登录</h1>
+			<label class="sr-only">用户名</label>
+			<input type="text" name="username" class="form-control" placeholder="用户名" th:placehold required="" autofocus=""><br>
+			<label class="sr-only">密码</label>
+			<input type="password" name="password" class="form-control" placeholder="密码" required="" autofocus="">
+			<div class="checkbos mb-3">
+				<label>
+					<input type="checkbox" value="remember"/>记住我
+				</label>
+			</div>
+			<button class="btn btn-lg btn-primary btn-block" type="submit">登陆</button>
+			<p class="mt-5 mb-3 text-muted">2018-2019</p>
+			<a class="btn btn-sm" href="/crud/index.html?l=zh_CN">中文</a>
+			<a class="btn btn-sm" href="/crud/index.html?l=en_US">English</a>
+	
+	
+	</form>
+</body>
+</html>
