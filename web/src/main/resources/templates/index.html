@@ -11,6 +11,7 @@
 <body class="text-center">
 		<form class="form-signin" action="/user/index" method="post"><!-- action=" "   双引号中的路径与@PostMapping(value = " ")value中的路径必须一致-->
 			<h1 class="h3 mb-3 font-weight-normal">请登录</h1>
+			<p style="color:red" th:text="${msg}" th:if="${not #strings.isEmpty(msg)}"></p>
 			<label class="sr-only">用户名</label>
 			<input type="text" name="username" class="form-control" placeholder="用户名" th:placehold required="" autofocus=""><br>
 			<label class="sr-only">密码</label>
